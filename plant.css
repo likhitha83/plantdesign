@@ -1,0 +1,85 @@
+body,html{
+  background-color: black;
+  margin:0;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  position:relative;
+  background-color: blanchedalmond;
+  margin:0;
+  width:150px;
+  height:50px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 10px;
+  border:none;
+  transition: .5s;
+  perspective: 500px;
+}
+
+button:hover{
+  padding:13px ;
+  border-radius: 8px 8px 24px 24px;
+  transition:.5s
+}
+
+.icon-1{
+  background: none;
+  position:absolute;
+  opacity: 0;
+}
+
+button:hover .icon-1{
+  opacity:1;
+  position: absolute;
+  top:-292%;
+  left:-30%;
+  transform: translate(-50%,0);
+  width:275px;
+  height: auto;
+  transform-origin: bottom center;
+  transform: rotateX(20deg);
+
+}
+
+.icon-2{
+  background: none;
+  position:absolute;
+  opacity: 0;
+}
+
+button:hover .icon-2{
+  opacity:1;
+  position: absolute;
+  top:-425%;
+  left:-50%;
+  transform: translate(-50%,0);
+  width:400px;
+  height: auto;
+  transform-origin: bottom center;
+  transform: rotateY(200deg);
+
+}
+
+.icon-3{
+  background: none;
+  position:absolute;
+  opacity: 0;
+  transform:scaleX(-1);
+}
+
+button:hover .icon-3{
+  opacity:1;
+  position: absolute;
+  top:-425%;
+  left:-110%;
+  width:400px;
+  height: auto;
+  transform-origin: bottom center;
+  transform:scaleX(-1);
+  transform: rotateX(20deg);
+}
